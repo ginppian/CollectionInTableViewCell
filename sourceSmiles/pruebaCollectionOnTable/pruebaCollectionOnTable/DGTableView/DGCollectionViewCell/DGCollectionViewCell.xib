@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DGCollectionViewCell" id="gTV-IL-0wX" customClass="DGCollectionViewCell" customModule="pruebaCollectionOnTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="216" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="216" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="KOG-k6-hAd">
+                        <rect key="frame" x="0.0" y="0.0" width="216" height="155"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="KOG-k6-hAd" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" id="LtY-pJ-ccQ"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="KOG-k6-hAd" secondAttribute="trailing" id="Tm1-j9-q0D"/>
+                <constraint firstItem="KOG-k6-hAd" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="WFo-av-eOZ"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="leading" secondItem="KOG-k6-hAd" secondAttribute="leading" id="tXb-GI-dJk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="216" height="155"/>
+            <connections>
+                <outlet property="dgimg" destination="KOG-k6-hAd" id="tLj-wB-LZe"/>
+            </connections>
+            <point key="canvasLocation" x="185.59999999999999" y="95.802098950524751"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="smile" width="640" height="640"/>
+    </resources>
+</document>
